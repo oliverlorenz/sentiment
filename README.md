@@ -1,10 +1,12 @@
-## sentiment
-#### AFINN-based sentiment analysis for Node.js
-
+## sentiment custom lists - AFINN-based sentiment analysis for Node.js
 [![Build Status](https://travis-ci.org/thisandagain/sentiment.svg?branch=develop)](https://travis-ci.org/thisandagain/sentiment)
 [![Coverage Status](https://coveralls.io/repos/thisandagain/sentiment/badge.svg?branch=develop&service=github)](https://coveralls.io/github/thisandagain/sentiment?branch=develop)
 [![Dependency Status](https://david-dm.org/thisandagain/sentiment.svg)](https://david-dm.org/thisandagain/sentiment)
 [![devDependency Status](https://david-dm.org/thisandagain/sentiment/dev-status.svg)](https://david-dm.org/thisandagain/sentiment#info=devDependencies)
+
+This project is a fork of [thisandagain/sentiment](https://github.com/thisandagain/sentiment). This project do the same as the original project and add support to use other AFINN like lists to do sentiment analysis
+
+#### Original description
 
 Sentiment is a Node.js module that uses the [AFINN-111](http://www2.imm.dtu.dk/pubdb/views/publication_details.php?id=6010) wordlist to perform [sentiment analysis](http://en.wikipedia.org/wiki/Sentiment_analysis) on arbitrary blocks of input text. Sentiment provides serveral things:
 
@@ -14,12 +16,12 @@ Sentiment is a Node.js module that uses the [AFINN-111](http://www2.imm.dtu.dk/p
 
 ### Installation
 ```bash
-npm install sentiment
+npm install sentiment-custom-lists
 ```
 
 ### Usage
 ```javascript
-var sentiment = require('sentiment');
+var sentiment = require('sentiment-custom-lists');
 
 var r1 = sentiment('Cats are stupid.');
 console.dir(r1);        // Score: -2, Comparative: -0.666
@@ -28,12 +30,21 @@ var r2 = sentiment('Cats are totally amazing!');
 console.dir(r2);        // Score: 4, Comparative: 1
 ```
 
+### Usage with another list
+("de_de" list currently __not__ existing)
+```javascript
+var sentiment = require('sentiment-custom-lists');
+
+var r1 = sentiment('Katzen sind dumm.', 'de_de');
+console.dir(r1);        // Score: -2, Comparative: -0.666
+```
+
 ### Adding / overwriting words
 You can append and/or overwrite values from AFINN by simply injecting key/value pairs into a sentiment method call:
 ```javascript
 var sentiment = require('sentiment');
 
-var result = sentiment('Cats are totally amazing!', {
+var result = sentiment('Cats are totally amazing!', 'en_us' {
     'cats': 5,
     'amazing': 2  
 });
