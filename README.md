@@ -1,8 +1,8 @@
 ## sentiment custom lists - AFINN-based sentiment analysis for Node.js
-[![Build Status](https://travis-ci.org/thisandagain/sentiment.svg?branch=develop)](https://travis-ci.org/thisandagain/sentiment)
-[![Coverage Status](https://coveralls.io/repos/thisandagain/sentiment/badge.svg?branch=develop&service=github)](https://coveralls.io/github/thisandagain/sentiment?branch=develop)
-[![Dependency Status](https://david-dm.org/thisandagain/sentiment.svg)](https://david-dm.org/thisandagain/sentiment)
-[![devDependency Status](https://david-dm.org/thisandagain/sentiment/dev-status.svg)](https://david-dm.org/thisandagain/sentiment#info=devDependencies)
+[![Build Status](https://travis-ci.org/oliverlorenz/sentiment-custom-lists.svg?branch=develop)](https://travis-ci.org/oliverlorenz/sentiment-custom-lists)
+[![Coverage Status](https://coveralls.io/repos/github/oliverlorenz/sentiment-custom-lists/badge.svg?branch=develop)](https://coveralls.io/github/oliverlorenz/sentiment-custom-lists?branch=develop)
+[![Dependency Status](https://david-dm.org/oliverlorenz/sentiment-custom-lists.svg)](https://david-dm.org/oliverlorenz/sentiment-custom-lists)
+[![devDependency Status](https://david-dm.org/oliverlorenz/sentiment-custom-lists/dev-status.svg)](https://david-dm.org/oliverlorenz/sentiment-custom-lists#info=devDependencies)
 
 This project is a fork of [thisandagain/sentiment](https://github.com/thisandagain/sentiment). This project do the same as the original project and add support to use other AFINN like lists to do sentiment analysis
 
