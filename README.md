@@ -1,6 +1,5 @@
 ## sentiment custom lists - AFINN-based sentiment analysis for Node.js
 [![Build Status](https://travis-ci.org/oliverlorenz/sentiment-custom-lists.svg?branch=develop)](https://travis-ci.org/oliverlorenz/sentiment-custom-lists)
-[![Coverage Status](https://coveralls.io/repos/github/oliverlorenz/sentiment-custom-lists/badge.svg?branch=develop)](https://coveralls.io/github/oliverlorenz/sentiment-custom-lists?branch=develop)
 [![Dependency Status](https://david-dm.org/oliverlorenz/sentiment-custom-lists.svg)](https://david-dm.org/oliverlorenz/sentiment-custom-lists)
 [![devDependency Status](https://david-dm.org/oliverlorenz/sentiment-custom-lists/dev-status.svg)](https://david-dm.org/oliverlorenz/sentiment-custom-lists#info=devDependencies)
 
