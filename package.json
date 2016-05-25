@@ -1,12 +1,12 @@
 {
-  "author": "Andrew Sliwinski <andrewsliwinski@acm.org>",
+  "author": "Oliver Lorenz <mail@oliverlorenz.com>",
   "name": "sentiment",
-  "description": "AFINN-based sentiment analysis for Node.js",
+  "description": "AFINN-based sentiment analysis for Node.js. Prepared for different languages and context list",
   "version": "1.0.6",
-  "homepage": "https://github.com/thisandagain/sentiment",
+  "homepage": "https://github.com/oliverlorenz/sentiment-custom-lists",
   "repository": {
     "type": "git",
-    "url": "https://github.com/thisandagain/sentiment.git"
+    "url": "https://github.com/oliverlorenz/sentiment-custom-lists.git"
   },
   "keywords": [
     "sentiment",
@@ -16,10 +16,12 @@
   ],
   "main": "./lib/index.js",
   "scripts": {
-    "test": "make test"
+    "test": "make test",
+    "postinstall" : "make build"
   },
   "dependencies": {
-    "lodash.assign": "4.0.9"
+    "lodash.assign": "4.0.9",
+    "sentiment-lists": "https://github.com/oliverlorenz/sentiment-lists.git"
   },
   "devDependencies": {
     "Sentimental": "1.0.1",
