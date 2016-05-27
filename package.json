@@ -20,6 +20,7 @@
     "postinstall": "node build/index.js"
   },
   "dependencies": {
+    "async": "^2.0.0-rc.5",
     "lodash.assign": "4.0.9",
     "sentiment-lists": "https://github.com/oliverlorenz/sentiment-lists.git"
   },
