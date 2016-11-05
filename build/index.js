@@ -10,7 +10,7 @@
  */
 var fs = require('fs')
 var pattern = /(.+)\.txt/i
-var baseDirectory = __dirname + '/../node_modules/sentiment-lists'
+var baseDirectory = fs.realpathSync(__dirname + '/../../public-transport-sentiment-lists')
 fs.readdir(baseDirectory, function (err, directoryContent) {
     directoryContent.forEach(function (item) {
       var match = pattern.exec(item)
