@@ -10,6 +10,7 @@
  */
 var fs = require('fs')
 var pattern = /(.+)\.txt/i
+const lists = require('public-transport-sentiment-lists')
 var baseDirectory = fs.realpathSync(__dirname + '/../../public-transport-sentiment-lists')
 fs.readdir(baseDirectory, function (err, directoryContent) {
     directoryContent.forEach(function (item) {
