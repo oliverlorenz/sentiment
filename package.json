@@ -2,7 +2,7 @@
   "author": "Oliver Lorenz <mail@oliverlorenz.com>",
   "name": "sentiment-custom-lists",
   "description": "AFINN-based sentiment analysis for Node.js. Prepared for different languages and context list",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "homepage": "https://github.com/oliverlorenz/sentiment-custom-lists",
   "repository": {
     "type": "git",
