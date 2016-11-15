@@ -11,7 +11,8 @@
 var fs = require('fs')
 var pattern = /(.+)\.txt/i
 const lists = require('public-transport-sentiment-lists')
-var baseDirectory = fs.realpathSync(__dirname + '/../../public-transport-sentiment-lists')
+var baseDirectory = fs.realpathSync(__dirname + '/../node_modules/public-transport-sentiment-lists')
+// console.log(fs.realpathSync(__dirname + '/../node_modules/public-transport-sentiment-lists'))
 fs.readdir(baseDirectory, function (err, directoryContent) {
     directoryContent.forEach(function (item) {
       var match = pattern.exec(item)
@@ -21,6 +22,7 @@ fs.readdir(baseDirectory, function (err, directoryContent) {
           var hash = {}
           // Split lines
           var lines = data.toString().split(/\n/)
+          console.log('read  file:', baseDirectory + '/' + match[0])
           lines.forEach((line) => {
             if (line.length !== 0) {
               var item = line.split(/\t/)
@@ -31,7 +33,7 @@ fs.readdir(baseDirectory, function (err, directoryContent) {
               __dirname + '/' + match[1] + '.json',
               JSON.stringify(hash, null, 2)
             )
-          console.log(`wrote file ${__dirname + '/' + match[1] + '.json'}`)
+          console.log(`wrote file: ${__dirname + '/' + match[1] + '.json'}`)
         })
       }
     })
