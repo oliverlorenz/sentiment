@@ -20,7 +20,7 @@
     "postinstall": "node build/index.js"
   },
   "dependencies": {
-    "async": "^2.0.0",
+    "async": "^2.4.0",
     "lodash.assign": "4.2.0",
     "public-transport-sentiment-lists": "^1"
   },
